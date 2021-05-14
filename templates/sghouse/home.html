@@ -12,6 +12,8 @@
 <br><br>
 <a href="{% url 'login' %}">로그인</a>
 <br><br>
+<a href="{%url 'classhome' %}">classhome</a>
+<br><br>
 
 {% for post in posts_list %}
     <a href="{% url 'detail' index=post.pk %}">{{post.title}}</a><br>
