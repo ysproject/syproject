@@ -58,3 +58,9 @@ def delete_comment(request, index, comment_pk):
     comment = get_object_or_404(Comment, pk=comment_pk)
     comment.delete()
     return redirect('detail', index=index)
+
+def mypage(request):
+    return render(request, 'sghouse/mypage.html')
+
+def aboutservice(request):
+    return render(request, 'sghouse/aboutservice.html')

@@ -13,6 +13,8 @@ urlpatterns = [
     path('detail/<int:index>/comment/<int:comment_pk>/delete/', sghouse.views.delete_comment, name="delete_comment"),
     path('accounts/', include('accounts.urls')),
     path('class/', include('classli.urls')),
+    path('mypage/', sghouse.views.mypage, name="mypage"),
+    path('aboutservice/', sghouse.views.aboutservice, name="aboutservice"),
 ]
 
 urlpatterns+=static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
